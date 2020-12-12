@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/logo"
+        android:src="@drawable/hdlogo"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_container"
+        android:outlineAmbientShadowColor="@color/coralColour"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="8dp"
+            android:text="Please provide an ID for your Item?"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHighlight="@color/coralColour"
+            android:shadowColor="@color/coralColour"
+            android:hint="your item id"
+            android:id="@+id/item_id_input"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:text="Please provide a Price for your Item?"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/coralColour"
+            android:hint="your item price"
+            android:textColorHighlight="@color/coralColour"
+            android:id="@+id/item_price_input"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:text="Please provide a quantity for your Item?"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:shadowColor="@color/coralColour"
+            android:layout_height="wrap_content"
+            android:hint="your item quantity"
+            android:textColorHighlight="@color/coralColour"
+            android:id="@+id/item_quantity_input"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:text="Please provide a description of your Item?"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHighlight="@color/coralColour"
+            android:hint="your item description"
+            android:shadowColor="@color/coralColour"
+            android:id="@+id/item_description_input"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:text="Please provide the specifications of your item?"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/coralColour"
+            android:textColorHighlight="@color/coralColour"
+            android:hint="your item specifications"
+            android:id="@+id/item_specs_input"
+            android:textSize="18sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add your item!! HERO!"
+            android:onClick="submitItem"
+            android:backgroundTint="@color/coralColour"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
